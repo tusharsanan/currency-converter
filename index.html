@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <title>Online Currency Conversion</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="node_modules/systemjs/dist/s.min.js"></script>
+    <script src="node_modules/lit/polyfill-support.js"></script>
+    <script
+      type="module"
+      src="packages/currency-conversion/currency-conversion.js"
+    ></script>
+    <style>
+      * {
+        font-family: sans-serif, Helvetica, Arial;
+        color: #0abf53;
+      }
+      p {
+        border: solid 1px blue;
+        padding: 8px;
+      }
+      body {
+        background-color: #28465f;
+      }
+    </style>
+  </head>
+  <body>
+    <currency-conversion></currency-conversion>
+  </body>
+</html>
